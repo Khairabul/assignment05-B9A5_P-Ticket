@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+
+.offer-content{
+    position: relative;
+}
+.offer-left{
+    position: absolute;
+}
+.offer-right{
+    position: absolute;
+}
+.offer-image{
+    position: absolute;
+}
+.taka-logo{
+    
+    margin-right: 100px;
+}
+.taka-img{
+    width: 100px;    
+}
