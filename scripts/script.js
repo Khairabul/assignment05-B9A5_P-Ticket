@@ -227,10 +227,10 @@ let button = document.getElementById('booking-btn')
 let inputPhoneNumber = document.getElementById('phone-number')
 let success =document.getElementById('my_modal_8')
 inputPhoneNumber.addEventListener('keyup',function(e){
- console.log(e.currentTarget.value)
+ 
 
  let inputValue=e.currentTarget.value;
- if (inputValue ==='number'){
+ if (typeof inputValue ==='number'|| serial===0 ){
     button.disabled=true;
       
  }
