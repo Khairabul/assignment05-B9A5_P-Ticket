@@ -170,7 +170,7 @@
                             <img src="images/wheel@1x.png" alt="">
                         </button>
                     </div>
-                    <div class="grid grid-cols-5 grid-rows-10 gap-1 mx-2 my-2 ">
+                    <div class="grid grid-cols-4 grid-rows-10 gap-1 mx-2 my-2 ">
                         <!-- <h1 id="A" class="bg-gray-200 text-center mx-6 mb-6 py-2 rounded">A</h1> -->
                         <button id="A1" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
                             <h1>A1</h1>
@@ -184,24 +184,24 @@
                         <button id="A4" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
                             <h1>A4</h1>
                         </button>
-                        <button id="A5" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
-                            <h1>A5</h1>
+                        <button id="B1" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
+                            <h1>B1</h1>
                         </button>
-                        <button id="A6" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
-                            <h1>A6</h1>
+                        <button id="B2" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
+                            <h1>B2</h1>
                         </button>
-                        <button id="A7" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
-                            <h1>A7</h1>
+                        <button id="B3" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
+                            <h1>B3</h1>
                         </button>
-                        <button id="A8" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
-                            <h1>A8</h1>
+                        <button id="B4" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
+                            <h1>B4</h1>
                         </button>
-                        <button id="A9" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
+                        <!-- <button id="A9" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
                             <h1>A9</h1>
                         </button>
                         <button id="A10" class="all-seat btn bg-gray-200 text-center mx-6 mb-6 py-2 rounded">
                             <h1>A10</h1>
-                        </button>
+                        </button> -->
                         <!-- <h1 id="A1" class="bg-gray-200 text-center mx-6 my-6 py-2 rounded">A1</h1> -->
                         <!-- <h1 id="A2" class="bg-gray-200 text-center mx-6 my-6 py-2 rounded">A2</h1>
                         <h1 id="A3" class="bg-gray-200 text-center mx-6 my-6 py-2 rounded">A3</h1>
@@ -332,23 +332,26 @@
                     <!-- login form -->
                     <div class="mx-4">
                         <h1>Passenger Name*</h1>
-                        <input class="w-full border bg-slate-200 " type="Name" placeholder="Enter your name">
+                        <input id="passenger-name" class="w-full border bg-slate-200 " type="Name"
+                            placeholder="Enter your name">
                         <h1>Phone Number*</h1>
                         <input class="w-full border phone-number bg-slate-200" type="phone" name="" id="phone-number"
                             placeholder="Enter your phone number">
                         <h1>Email ID</h1>
-                        <input class="w-full border bg-slate-200" type="email" name="" id=""
+                        <input class="w-full border bg-slate-200" type="email" name="" id="email"
                             placeholder="Enter your email id ">
 
                         <!-- <button id="booking-btn" class="btn  border-none bg-[#1DD100] text-white w-full my-4  "
-                            type="button">
+                            type="button" disabled>                             
                             Apply
                         </button> -->
-                        <a href="#my_modal_8" id="booking-btn"
-                            class="btn btn  border-none bg-[#1DD100] text-white w-full my-4">Apply</a>
+                        
+                         
+                        <a href="#my_modal_8" id="booking-btn" 
+                            class="btn btn booking-btn border-none bg-[#1DD100] text-white w-full my-4 ">Apply</a>
 
                         <div class="modal" role="dialog" id="my_modal_8">
-                            <div class="modal-box">
+                            <div class="modal-box" id="succes-box">
                                 <img class="ml-44 py-4 item-center" src="images/success.png" alt="">
                                 <p class="text-center">Thank you for Booking Our Bus Seats. <br>
                                     We are working hard to find the best service and deals for you.
@@ -369,7 +372,7 @@
             </div>
         </section>
         <!-- Booking status -->
-        <section id="booking-confirmation" class="container mx-auto  booking-confirmation hidden">
+        <!-- <section id="booking-confirmation" class="container mx-auto  booking-confirmation hidden">
             <div class="items-center justify-center text-center grid  bg-white mt-16 border-4 gap-6 ">
                 <img class="ml-72 item-center" src="images/success.png" alt="">
                 <p class="text-center">Thank you for Booking Our Bus Seats. <br>
@@ -378,12 +381,41 @@
                 <button
                     class="btn btn-primary border-none w-48 ml-64 bg-[#1DD100] text-white rounded-3xl">Continue</button>
             </div>
-        </section>
+        </section> -->
         <section>
-            <!-- The button to open modal -->
-
         </section>
     </main>
+    <footer class="justify-between footer p-10 bg-neutral text-neutral-content">
+        <div class="">
+            <div class="flex justify-between items-center gap-96 ">
+                <aside>
+                    <h1>P-Ticket</h1>
+                  <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                </aside> 
+                <nav>
+                  <h6 class="footer-title">Download our app</h6> 
+                  <div class="grid grid-flow-col gap-4">
+                    <a>Google Play<img src="images/playstore.png" alt=""></a>
+                    
+                  </div>
+                </nav>
+            </div>
+            <hr>
+            <hr>
+            <div class="flex justify-between items-center gap-72">
+                <div>
+                    <h1>@all rights reserved, P-Ticket services limited.2024</h1>
+                </div>
+                <div>
+                    <a class="link">Terms & condition</a>
+                    <a class="link">Return & refund policy</a>
+                    <a class="link">Privacy policy</a>
+                </div>
+    
+            </div>
+        </div>
+      </footer>
+
     <script src="scripts/script.js"></script>
 
 </body>
