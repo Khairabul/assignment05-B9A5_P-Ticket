@@ -223,60 +223,19 @@ function displayData(serial, seatA1, seatClass, pricePerSeat) {
 
 // -------form----------------
 
+let button = document.getElementById('booking-btn')
+let inputPhoneNumber = document.getElementById('phone-number')
+let success =document.getElementById('my_modal_8')
+inputPhoneNumber.addEventListener('keyup',function(e){
+ console.log(e.currentTarget.value)
 
+ let inputValue=e.currentTarget.value;
+ if (inputValue ==='number'){
+    button.disabled=true;
+      
+ }
+ else{
+    button.disabled=false;
+ }
 
-// let inputPhoneNumber = document.querySelector('.phone-number')
-// let button = document.querySelector('.booking-btn')
-// button.disabled =true;
-// inputPhoneNumber.addEventListener('keyup',buttonStatus);
-// function buttonStatus(){
-//     if (document.querySelector('.phone-number').value===''){
-//         button.disabled=true;
-//     }
-//     else{
-//         button.disabled=false;
-//     }
-// }
-
-// let inputPassengerName = document.getElementById('passenger-name')
-// let button = document.querySelector('.booking-btn')
-// let inputEmail = document.getElementById('email')
-// let success =document.getElementById('my_modal_8')
-// let inputPhoneNumber = document.getElementById('phone-number')
-// button.addEventListener('click', function () {
-//     let inputPhoneNumber = document.getElementById('phone-number')
-//     console.log(parseInt(inputPhoneNumber))
-//     if (inputPhoneNumber.value !== 'number' ) {
-//         alert('Please fill out the form correctly.')  
-//         success.classList.add('hidden')
-              
-//     }
-//     else{
-//         success.classList.remove('hidden')
-//     }
-
-// })
-
-// let button = document.getElementById('booking-btn')
-// let inputPhoneNumber = document.getElementById('phone-number')
-// let success =document.getElementById('my_modal_8')
-// inputPhoneNumber.addEventListener('keyup',function(e){
-//  console.log(e.currentTarget.value)
-
-//  let inputValue=e.currentTarget.value;
-//  if (inputValue==="" ||inputValue ==='number'){
-//     button.disabled=true;
-//     success.classList.add('hidden')   
-//  }
-//  else{
-//     button.disabled=false;
-//  }
-
-// })
-
-
-
-
-
-
-
+})
